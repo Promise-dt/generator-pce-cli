@@ -1,6 +1,6 @@
 {
   "name": "generator-pce-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "repository": "https://github.com/Promise-dt/generator-pce-cli.git",
   "license": "MIT",
