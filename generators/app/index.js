@@ -5,9 +5,10 @@ module.exports = class extends Generator {
         
         //把每一个文件通过模板转换到目标路径
         const templates = [
-            '.gitignore',
             'babel.config.js',
             'package.json',
+            'package-lock.json',
+            'yarn.lock',
             'README.md',
             'public/favicon.ico',
             'public/index.html',
