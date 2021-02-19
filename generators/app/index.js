@@ -1,6 +1,22 @@
 const Generator = require('yeoman-generator')
 
 module.exports = class extends Generator {
+
+    // 传入一个prompting方法用于在用户执行工具时，输入一些信息
+    prompting() {
+        return this.prompt([
+            {
+                type: 'input',
+                name: 'name',
+                message: 'Input Your Project Name',
+                default: this.appname
+            }
+        ])
+            .then(answers => {
+                this.answers = answers
+            })
+    }
+
     writing () {
         
         //把每一个文件通过模板转换到目标路径
@@ -30,19 +46,5 @@ module.exports = class extends Generator {
                 this.answers
               )
           })
-    }
-    // 传入一个prompting方法用于在用户执行工具时，输入一些信息
-    prompting() {
-        return this.prompt([
-            {
-                type: 'input',
-                name: 'name',
-                message: 'Input Your Project Name',
-                default: this.appname
-            }
-        ])
-            .then(answers => {
-                this.answers = answers
-            })
     }
 }
