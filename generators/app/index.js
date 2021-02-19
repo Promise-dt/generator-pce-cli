@@ -24,7 +24,6 @@ module.exports = class extends Generator {
             'babel.config.js',
             'package.json',
             'package-lock.json',
-            'yarn.lock',
             'README.md',
             'public/favicon.ico',
             'public/index.html',
