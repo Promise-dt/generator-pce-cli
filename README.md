@@ -1,2 +1,2 @@
-# pce-cli
+# generator-pce-cli
 test cli file
